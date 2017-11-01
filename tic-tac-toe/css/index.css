@@ -1,0 +1,61 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	user-select: none;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Comic Sans MS';
+	font-size: 6vw;
+	background: #1c252a;
+	border-color: white;
+}
+
+.table, .table tbody {
+	border-spacing: 20px;
+}
+
+.tr {
+	height: 33%;
+}
+
+.td {
+	height: 11vw;
+	width: 11vw;
+	margin: 12px;
+	border: 10px solid white;
+	border-radius: 10%;
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: inset 0 0 5px #25d7fb, inset 0 0 10px #25d7fb, inset 0 0 15px #25d7fb, inset 0 0 20px #25d7fb, inset 0 0 25px #25d7fb, inset 0 0 30px #25d7fb, 0 0 5px #25d7fb, 0 0 10px #25d7fb, 0 0 15px #25d7fb, 0 0 20px #25d7fb, 0 0 25px #25d7fb, 0 0 30px #25d7fb;
+}
+
+.x, .o, .xo {
+	display: inline-block;
+}
+
+.xo {
+	margin: 16px;
+}
+
+.x, .o {
+	height: 8vw;
+	width: 8vw;
+	line-height: 7vw;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.x {
+	text-shadow: 0 0 5px #00ff66, 0 0 10px #00ff66, 0 0 15px #00ff66, 0 0 20px #00ff66, 0 0 25px #00ff66, 0 0 30px #00ff66;
+}
+
+.o {
+	text-shadow: 0 0 5px #ff63a2, 0 0 10px #ff63a2, 0 0 15px #ff63a2, 0 0 20px #ff63a2, 0 0 25px #ff63a2, 0 0 30px #ff63a2;
+}

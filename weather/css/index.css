@@ -1,0 +1,155 @@
+body, html {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 1.3em;
+}
+
+container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	height: 100%;
+	color: white;
+	background: linear-gradient(to right, rgba(62,204,203,1) 0%, rgba(24,82,82,1) 100%);
+}
+
+div {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	transition: all .2s linear;
+}
+
+.divider {
+	user-select: none;
+	margin: 0 12px;
+	font-size: 1em;
+}
+
+.min-max, .date {
+	font-size: 0.7em;
+}
+
+.wi {
+	margin: 200px 0 100px 0;
+	font-size: 2em;
+	transition: font-size .2s linear;
+}
+
+.temperature {
+	font-size: 0.7em;;
+}
+
+.selected .temperature {
+	font-size: 2.3em;;
+}
+
+.selected .wi {
+	margin: 200px 0 20px 0;
+	font-size: 7em;
+	opacity: .7;
+}
+
+.description, .min-max, .date {
+	opacity: 0;
+	display: none;
+}
+
+.selected .description, .selected .min-max, .selected .date{
+	opacity: 1;
+	display: block;
+	transition: opacity .3s linear;
+}
+
+.selected {
+	flex-grow: 3.7;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+#close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: transparent;
+	border: none;
+	color: white;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+#start {
+	top: 0;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#input {
+	background: transparent;
+	border: none;
+	border-bottom: 2px dashed white;
+	height: 2em;
+	font-size: 1em;
+	font-weight: 300;
+	color: white;
+}
+
+#input::-webkit-input-placeholder {
+	color: white;
+}
+
+#input:focus{
+    outline: none;
+}
+
+#go {
+	text-transform: uppercase;
+	border: none;
+	color: #185252;
+	height: 4em;
+	width: 4em;
+	background: white;
+	margin-left: 12px;
+}
+
+div:nth-child(1) {
+	background: #3ECCCB;
+}
+
+div:nth-child(2) {
+	background: #36B4B3;
+}
+
+div:nth-child(3) {
+	background: #31A3A2;
+}
+
+div:nth-child(4) {
+	background: #2C9392;
+}
+
+div:nth-child(5) {
+	background: #278382;
+}
+
+div:nth-child(6) {
+	background: #227271;
+}
+
+div:nth-child(7) {
+	background: #1D6262;
+}
+
+div:nth-child(8) {
+	background: #185252;
+}
